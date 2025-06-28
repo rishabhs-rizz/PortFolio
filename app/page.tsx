@@ -7,6 +7,7 @@ import {
   GPaySupport,
 } from "@/components/icons/Supports";
 import { Skills } from "@/components/skills/skills";
+import ProjectCard from "@/components/icons/ProjectCard";
 export default function PortFolio() {
   return (
     <div className="min-h-screen bg-black text-white flex justify-center">
@@ -42,7 +43,7 @@ export default function PortFolio() {
               <div className="top-7 bg-neutral-400/60 dark:bg-neutral-600 mt-1 w-full h-[0.9px]"></div>
             </div>
             <img
-              className="w-full h-full transition-all duration-300 ease-in-out object-cover hover:scale-250"
+              className="w-full h-full transition-all duration-700 ease-in-out object-cover hover:scale-250"
               alt=""
               src="https://www.mihircodes.in/assets/images/map.webp"
             />
@@ -186,7 +187,12 @@ export default function PortFolio() {
           </div>
         </div>
 
-        <div className="projects "></div>
+        <div className="projects mt-12">
+          <p className="font-semibold text-xl">Proof of Work</p>
+          <div className="project-container flex-col mt-6">
+            <ProjectCard />
+          </div>
+        </div>
       </div>
     </div>
   );
