@@ -9,11 +9,12 @@ import { Skills } from "@/components/skills/skills";
 import ProjectCard from "@/components/icons/ProjectCard";
 import { InfoTipProjects } from "@/components/ToolTip/ToolTip";
 import { ProfilePic } from "@/components/Image/Image";
+import { Contact } from "@/components/Contact/Contact";
 export default function PortFolio() {
   return (
     <div className="min-h-screen bg-black text-white flex justify-center">
       <div className="bg-black w-3xl mt-10">
-        <div className="prof-sec flex gap-3">
+        <div className="prof-sec flex gap-3 pb-8 border-b border-neutral-400/30">
           <ProfilePic></ProfilePic>
           <div className="mt-3">
             <p className="font-semibold text-3xl">Rishabh Shukla</p>
@@ -215,6 +216,11 @@ export default function PortFolio() {
           <div className="project-container flex-col mt-6 ">
             <ProjectCard />
           </div>
+        </div>
+
+        <Contact />
+        <div className="w-full text-sm h-18 flex justify-center items-center">
+          &copy; 2025 Rishabh. All Rights Reserved
         </div>
       </div>
     </div>
