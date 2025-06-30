@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Twitter, LinkedIn, Github, Mail } from "@/components/icons/icons";
 import ShinyButton from "@/components/buttons/button";
 import {
@@ -8,26 +7,50 @@ import {
 } from "@/components/icons/Supports";
 import { Skills } from "@/components/skills/skills";
 import ProjectCard from "@/components/icons/ProjectCard";
+import { InfoTipProjects } from "@/components/ToolTip/ToolTip";
+import { ProfilePic } from "@/components/Image/Image";
 export default function PortFolio() {
   return (
     <div className="min-h-screen bg-black text-white flex justify-center">
       <div className="bg-black w-3xl mt-10">
         <div className="prof-sec flex gap-3">
-          <Image
-            src="/profile.jpeg"
-            alt="profile"
-            width={140}
-            height={140}
-            className="rounded-xl border-red-900 border-2"
-          ></Image>
+          <ProfilePic></ProfilePic>
           <div className="mt-3">
             <p className="font-semibold text-3xl">Rishabh Shukla</p>
             <p>Software Engineer</p>
             <div className="tags flex gap-2 mt-3.5">
-              <Github />
-              <Twitter />
-              <LinkedIn />
-              <Mail />
+              <InfoTipProjects text="Github">
+                <a
+                  target="_blank"
+                  className="cursor-pointer hover:text-zinc-400 transition-colors duration-100 group"
+                >
+                  <Github />
+                </a>
+              </InfoTipProjects>
+              <InfoTipProjects text="Twitter">
+                <a
+                  target="_blank"
+                  className="cursor-pointer hover:text-zinc-400 transition-colors duration-100 group"
+                >
+                  <Twitter />
+                </a>
+              </InfoTipProjects>
+              <InfoTipProjects text="LinkedIn">
+                <a
+                  target="_blank"
+                  className="cursor-pointer hover:text-zinc-400 transition-colors duration-100 group"
+                >
+                  <LinkedIn />
+                </a>
+              </InfoTipProjects>
+              <InfoTipProjects text="Mail">
+                <a
+                  target="_blank"
+                  className="cursor-pointer hover:text-zinc-400 transition-colors duration-100 group"
+                >
+                  <Mail />
+                </a>
+              </InfoTipProjects>
             </div>
           </div>
           <div
@@ -189,7 +212,7 @@ export default function PortFolio() {
 
         <div className="projects mt-12">
           <p className="font-semibold text-xl">Proof of Work</p>
-          <div className="project-container flex-col mt-6">
+          <div className="project-container flex-col mt-6 ">
             <ProjectCard />
           </div>
         </div>
