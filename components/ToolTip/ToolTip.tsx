@@ -1,4 +1,3 @@
-import React from "react";
 interface InfoTipProps {
   text: string;
   children: React.ReactNode;

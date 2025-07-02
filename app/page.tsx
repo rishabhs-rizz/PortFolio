@@ -74,7 +74,7 @@ export default function PortFolio() {
           </p>
           <span className="buttons flex gap-4 mt-4">
             <ShinyButton text="Get in Touch" />
-            <ShinyButton text="Book a Call" />
+            <ShinyButton text="Book a Meet" />
           </span>
         </div>
 

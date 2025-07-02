@@ -50,10 +50,7 @@ export function Contact() {
             </button>
           </a>
         </span>
-        <form
-          onSubmit={handleSubmit}
-          className="space-y-4 w-full mx-auto mt-10"
-        >
+        <form onSubmit={handleSubmit} className="space-y-4 w-full mx-auto mt-5">
           <div>
             <label className="block text-sm text-white mb-1">Your Email</label>
             <input

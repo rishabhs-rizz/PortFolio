@@ -7,7 +7,10 @@ interface ShinyButtonProps {
 
 export const ShinyButton = ({ text }: ShinyButtonProps) => {
   return (
-    <motion.button
+    <motion.a
+      href="https://cal.com/rishabh-shukla/15min"
+      target="_blank" // 👈 this opens link in a new tab
+      rel="noopener noreferrer" // 👈 security best practice
       initial={{ "--x": "100%", scale: 1 }}
       animate={{ "--x": "-100%" }}
       whileTap={{ scale: 0.97 }}
@@ -26,13 +29,11 @@ export const ShinyButton = ({ text }: ShinyButtonProps) => {
           mass: 0.1,
         },
       }}
-      className="px-6 py-2 rounded-md relative radial-gradient cursor-pointer"
+      className="px-6 py-2 rounded-md relative radial-gradient cursor-pointer text-neutral-100 tracking-wide font-light block linear-mask"
     >
-      <span className="text-neutral-100 tracking-wide font-light h-full w-full block relative linear-mask ">
-        {text}
-      </span>
+      {text}
       <span className="block absolute inset-0 rounded-md p-px linear-overlay" />
-    </motion.button>
+    </motion.a>
   );
 };
 
