@@ -34,7 +34,7 @@ export const ProfilePic = () => {
               alt="profile"
               height={400}
               width={400}
-              className="rounded-xl border-red-900 border-2 object-cover hover:opacity-90 transition-all duration-300 ease-in-out cursor-pointer"
+              className="rounded-xl  object-cover hover:opacity-90 transition-all duration-300 ease-in-out cursor-pointer"
             ></Image>
           </div>
         </div>
