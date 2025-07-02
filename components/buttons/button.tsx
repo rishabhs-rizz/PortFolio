@@ -8,7 +8,6 @@ interface ShinyButtonProps {
 export const ShinyButton = ({ text }: ShinyButtonProps) => {
   return (
     <motion.a
-      href="https://cal.com/rishabh-shukla/15min"
       target="_blank" // 👈 this opens link in a new tab
       rel="noopener noreferrer" // 👈 security best practice
       initial={{ "--x": "100%", scale: 1 }}

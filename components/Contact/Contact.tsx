@@ -18,7 +18,10 @@ export function Contact() {
   return (
     <>
       {" "}
-      <div className="support mt-12 pb-5 border-b border-neutral-400/30">
+      <div
+        id="contact"
+        className="support mt-12 pb-5 border-b border-neutral-400/30"
+      >
         <p className="font-semibold text-xl">Get in Touch</p>
         <p className="mt-2">
           Interested in collaborating or discussing a project? I’m open to

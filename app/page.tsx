@@ -1,12 +1,13 @@
 import { Twitter, LinkedIn, Github, Mail } from "@/components/icons/icons";
 import ShinyButton from "@/components/buttons/button";
+import { Link } from "react-scroll";
 import {
   CoffeeSupport,
   GithubSponsors,
   GPaySupport,
 } from "@/components/icons/Supports";
 import { Skills } from "@/components/skills/skills";
-import ProjectCard from "@/components/icons/ProjectCard";
+import { ProjectCard } from "@/components/icons/ProjectCard";
 import { InfoTipProjects } from "@/components/ToolTip/ToolTip";
 import { ProfilePic } from "@/components/Image/Image";
 import { Contact } from "@/components/Contact/Contact";
@@ -73,8 +74,16 @@ export default function PortFolio() {
             insights as well.
           </p>
           <span className="buttons flex gap-4 mt-4">
-            <ShinyButton text="Get in Touch" />
-            <ShinyButton text="Book a Meet" />
+            <a href="#contact">
+              <ShinyButton text="Get in Touch" />
+            </a>
+            <a
+              href="https://cal.com/rishabh-shukla/15min"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <ShinyButton text="Book a Meet" />
+            </a>
           </span>
         </div>
 

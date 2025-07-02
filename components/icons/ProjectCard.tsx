@@ -14,7 +14,7 @@ interface ProjectCardProps {
   githubLink?: string;
 }
 
-const ProjectCard = () => {
+export function ProjectCard() {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
   const handleToggle = (index: number) => {
@@ -129,7 +129,7 @@ const ProjectCard = () => {
       ))}
     </>
   );
-};
+}
 
 export default ProjectCard;
 
