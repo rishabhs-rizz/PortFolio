@@ -1,4 +1,4 @@
-export default function Status() {
+export default function Status({ text }: { text: string }) {
   return (
     <div className="p-2 translate-y-2">
       <div className=" md:block hidden">
@@ -16,10 +16,9 @@ export default function Status() {
               <path d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z"></path>
             </svg>
           </span>
-          Available
+          {text}
         </div>
       </div>
-
       <div className="flex flex-col gap-3 mt-4 h-full">
         <div className="space-y-2">
           <div className="group flex items-center gap-2">
@@ -87,3 +86,30 @@ export default function Status() {
     </div>
   );
 }
+
+export const ProjectStatusText = ({ text }: { text: string }) => {
+  return (
+    <div
+      className={`select-none font-medium text-xs w-fit px-1.5 py-0.5 gap-0.5 rounded-md flex items-center ${
+        text === "Running"
+          ? "bg-green-400/10 text-green-400"
+          : "bg-red-400/10 text-red-400"
+      }`}
+    >
+      <span className="animate-pulse">
+        <svg
+          stroke="currentColor"
+          fill="currentColor"
+          strokeWidth="0"
+          viewBox="0 0 24 24"
+          height="1em"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z"></path>
+        </svg>
+      </span>
+      {text}
+    </div>
+  );
+};

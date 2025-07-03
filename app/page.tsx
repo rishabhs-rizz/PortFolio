@@ -62,7 +62,7 @@ export default function PortFolio() {
             </div>
           </div>
 
-          <Status />
+          <Status text="Available" />
         </div>
         <div className="about mt-10">
           <h1 className="text-[1.6rem] max-sm:text-2xl font-semibold tracking-tight text-start max-sm:text-center">

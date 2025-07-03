@@ -4,9 +4,11 @@ import { div } from "framer-motion/client";
 import { useState } from "react";
 import { Github, LiveLink, Preview, ProjectGithub } from "./icons";
 import { InfoTipProjects } from "../ToolTip/ToolTip";
+import { ProjectStatusText } from "../Status/Status";
 
 interface ProjectCardProps {
   title: string;
+  status: "Running" | "in-progress";
   duration: string;
   description: string;
   image: string;
@@ -50,7 +52,10 @@ export function ProjectCard() {
               <div className="flex flex-col justify-between ">
                 <div className="flex justify-between items-center mb-2">
                   <h3 className="font-semibold text-white w-full flex justify-between items-center">
-                    <span className="text-2xl">{project.title}</span>{" "}
+                    <span className="text-2xl flex items-center gap-2">
+                      {project.title}{" "}
+                      <ProjectStatusText text={project.status} />
+                    </span>{" "}
                     <span className="flex gap-1">
                       <InfoTipProjects text="Preview">
                         <a
@@ -136,6 +141,7 @@ export default ProjectCard;
 const data: ProjectCardProps[] = [
   {
     title: "DrawHive",
+    status: "Running",
     duration: "april 2025 – may 2025",
     description:
       "DrawHive is a real-time collaborative drawing tool where teammates can create, edit, and annotate shapes and text together—perfect for workflows, brainstorming, and visual planning.",
@@ -155,6 +161,7 @@ const data: ProjectCardProps[] = [
 
   {
     title: "DrawHive",
+    status: "in-progress",
     duration: "april 2025 – may 2025",
     description:
       "DrawHive is a real-time collaborative drawing tool where teammates can create, edit, and annotate shapes and text together—perfect for workflows, brainstorming, and visual planning.",
