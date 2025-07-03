@@ -26,6 +26,7 @@ export default function PortFolio() {
               <InfoTipProjects text="Github">
                 <a
                   target="_blank"
+                  href="https://github.com/rishabhs-rizz"
                   className="cursor-pointer hover:text-zinc-400 transition-colors duration-100 group"
                 >
                   <Github />
@@ -34,6 +35,8 @@ export default function PortFolio() {
               <InfoTipProjects text="Twitter">
                 <a
                   target="_blank"
+                  href="https://x.com/intent/follow?screen_name=rishabhs_rizz
+"
                   className="cursor-pointer hover:text-zinc-400 transition-colors duration-100 group"
                 >
                   <Twitter />
@@ -42,6 +45,7 @@ export default function PortFolio() {
               <InfoTipProjects text="LinkedIn">
                 <a
                   target="_blank"
+                  href="https://www.linkedin.com/in/rishabh-shukla-9725b123b/"
                   className="cursor-pointer hover:text-zinc-400 transition-colors duration-100 group"
                 >
                   <LinkedIn />
@@ -64,7 +68,7 @@ export default function PortFolio() {
           <h1 className="text-[1.6rem] max-sm:text-2xl font-semibold tracking-tight text-start max-sm:text-center">
             About Me
           </h1>
-          <p className="mt-2">
+          <p className="mt-1">
             Hey! I'm Rishabh Shukla, a 20-year old computer science student and
             full-stack developer who loves turning ideas into real, functional
             products.
@@ -96,7 +100,7 @@ export default function PortFolio() {
           <h1 className="text-[1.6rem] max-sm:text-2xl font-semibold tracking-tight text-start max-sm:text-center">
             Hire Me
           </h1>
-          <p className="mt-2">
+          <p className="mt-1">
             I’m currently available for internships, full-time opportunities,
             and freelance projects. If you’re looking for someone passionate,
             skilled, and ready to contribute, I’m here to help bring your ideas
@@ -111,7 +115,7 @@ export default function PortFolio() {
           <h1 className="text-[1.6rem] max-sm:text-2xl font-semibold tracking-tight text-start max-sm:text-center">
             Support Me
           </h1>
-          <p className="mt-2">
+          <p className="mt-1">
             If you love what I do, whether it’s my work, the content I share, or
             anything else, please consider supporting me. Your support helps me
             continue creating, improving, and sharing my work.
@@ -125,9 +129,9 @@ export default function PortFolio() {
 
         <div className="skills mt-10">
           <h1 className="text-[1.6rem] max-sm:text-2xl font-semibold tracking-tight text-start max-sm:text-center">
-            Skills
+            Skills & Tools
           </h1>
-          <div className="skills-container mt-2">
+          <div className="skills-container mt-1">
             <div className="p-1">
               <Skills />
             </div>
