@@ -49,8 +49,8 @@ export function ProjectCard() {
               {/* Content */}
               <div className="flex flex-col justify-between ">
                 <div className="flex justify-between items-center mb-2">
-                  <h3 className="text-lg font-semibold text-white w-full flex justify-between items-center">
-                    <span>{project.title}</span>{" "}
+                  <h3 className="font-semibold text-white w-full flex justify-between items-center">
+                    <span className="text-2xl">{project.title}</span>{" "}
                     <span className="flex gap-1">
                       <InfoTipProjects text="Preview">
                         <a

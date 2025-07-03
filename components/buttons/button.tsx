@@ -27,9 +27,9 @@ export const ShinyButton = ({ text }: ShinyButtonProps) => {
           mass: 0.1,
         },
       }}
-      className="px-6 py-2 rounded-md relative radial-gradient"
+      className="px-6 py-2 rounded-md relative radial-gradient cursor-pointer"
     >
-      <h1 className="text-neutral-100 tracking-wide font-light h-full w-full block relative linear-mask">
+      <h1 className="text-neutral-100 tracking-wide font-light h-full w-full block relative linear-mask ">
         {text}
       </h1>
       <span className="block absolute inset-0 rounded-md p-px linear-overlay" />

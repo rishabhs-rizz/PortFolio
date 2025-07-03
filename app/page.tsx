@@ -12,6 +12,7 @@ import { InfoTipProjects } from "@/components/ToolTip/ToolTip";
 import { ProfilePic } from "@/components/Image/Image";
 import { Contact } from "@/components/Contact/Contact";
 import Status from "@/components/Status/Status";
+import { Hire } from "@/components/icons/Hire";
 export default function PortFolio() {
   return (
     <div className="min-h-screen bg-black text-white flex justify-center">
@@ -59,19 +60,24 @@ export default function PortFolio() {
 
           <Status />
         </div>
-        <div className="about mt-12">
+        <div className="about mt-10">
           <h1 className="text-[1.6rem] max-sm:text-2xl font-semibold tracking-tight text-start max-sm:text-center">
             About Me
           </h1>
           <p className="mt-2">
-            20, reading fuels me - but building grounds me.
+            Hey! I'm Rishabh Shukla, a 20-year old computer science student and
+            full-stack developer who loves turning ideas into real, functional
+            products.
           </p>
           <p>
-            I just write code, break it, learn fast, make it happen, repeat.
+            I enjoy working with modern tools like Next.js, TypeScript, and
+            Express, and I’m always up for learning something new. Outside of
+            coding, I’m into reading books, playing cricket, swimming, and
+            exploring business insights.
           </p>
           <p>
-            Deeply intrested in Cricket, history, Video Editing and business
-            insights as well.
+            I also love contributing to open source and building things that
+            make a real difference.
           </p>
           <span className="buttons flex gap-4 mt-4">
             <a href="#contact">
@@ -86,8 +92,22 @@ export default function PortFolio() {
             </a>
           </span>
         </div>
+        <div className="support mt-10">
+          <h1 className="text-[1.6rem] max-sm:text-2xl font-semibold tracking-tight text-start max-sm:text-center">
+            Hire Me
+          </h1>
+          <p className="mt-2">
+            I’m currently available for internships, full-time opportunities,
+            and freelance projects. If you’re looking for someone passionate,
+            skilled, and ready to contribute, I’m here to help bring your ideas
+            to life!
+          </p>
+          <div className="flex flex-wrap items-center gap-2 mt-3.5">
+            <Hire />
+          </div>
+        </div>
 
-        <div className="support mt-12">
+        <div className="support mt-10">
           <h1 className="text-[1.6rem] max-sm:text-2xl font-semibold tracking-tight text-start max-sm:text-center">
             Support Me
           </h1>
@@ -103,7 +123,7 @@ export default function PortFolio() {
           </div>
         </div>
 
-        <div className="skills mt-12">
+        <div className="skills mt-10">
           <h1 className="text-[1.6rem] max-sm:text-2xl font-semibold tracking-tight text-start max-sm:text-center">
             Skills
           </h1>
@@ -114,7 +134,7 @@ export default function PortFolio() {
           </div>
         </div>
 
-        <div className="projects mt-12">
+        <div className="projects mt-10">
           <h1 className="text-[1.6rem] max-sm:text-2xl font-semibold tracking-tight text-start max-sm:text-center">
             Proof of Work
           </h1>
