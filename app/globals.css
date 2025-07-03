@@ -20,7 +20,7 @@
 
 /* Set Bricolage Grotesque as default font */
 @layer base {
-  body {
+  h1 {
     font-family: 'Bricolage Grotesque', sans-serif;
     @apply bg-neutral-950;
   }

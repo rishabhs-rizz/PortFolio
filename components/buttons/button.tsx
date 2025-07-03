@@ -1,22 +1,21 @@
 "use client";
-import { motion } from "framer-motion";
 
 interface ShinyButtonProps {
   text: string;
 }
 
+import { motion } from "framer-motion";
+
 export const ShinyButton = ({ text }: ShinyButtonProps) => {
   return (
-    <motion.a
-      target="_blank" // 👈 this opens link in a new tab
-      rel="noopener noreferrer" // 👈 security best practice
+    <motion.button
       initial={{ "--x": "100%", scale: 1 }}
       animate={{ "--x": "-100%" }}
       whileTap={{ scale: 0.97 }}
       transition={{
         repeat: Infinity,
         repeatType: "loop",
-        repeatDelay: 0.5,
+        repeatDelay: 1,
         type: "spring",
         stiffness: 20,
         damping: 15,
@@ -28,11 +27,13 @@ export const ShinyButton = ({ text }: ShinyButtonProps) => {
           mass: 0.1,
         },
       }}
-      className="px-6 py-2 rounded-md relative radial-gradient cursor-pointer text-neutral-100 tracking-wide font-light block linear-mask"
+      className="px-6 py-2 rounded-md relative radial-gradient"
     >
-      {text}
+      <h1 className="text-neutral-100 tracking-wide font-light h-full w-full block relative linear-mask">
+        {text}
+      </h1>
       <span className="block absolute inset-0 rounded-md p-px linear-overlay" />
-    </motion.a>
+    </motion.button>
   );
 };
 
