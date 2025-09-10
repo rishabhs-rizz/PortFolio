@@ -15,13 +15,18 @@ import Status from "@/components/Status/Status";
 import { Hire } from "@/components/icons/Hire";
 export default function PortFolio() {
   return (
-    <div className="min-h-screen bg-black text-white flex justify-center">
-      <div className="bg-black w-3xl mt-10">
-        <div className="prof-sec flex gap-3 pb-8 border-b border-neutral-400/30">
-          <ProfilePic></ProfilePic>
-          <div className="mt-3">
-            <h1 className="font-bricolage text-3xl">Rishabh Shukla</h1>
-            <p>Software Engineer</p>
+    <div className="min-h-screen bg-black text-white flex justify-center px-2 sm:px-4">
+      <div className="bg-black w-full max-w-3xl mt-6 sm:mt-10 px-2 sm:px-6 md:px-10">
+        <div className="prof-sec flex flex-col sm:flex-row gap-3 pb-8 border-b border-neutral-400/30">
+          <div className="flex flex-row sm:flex-col items-center sm:items-start gap-3">
+            <ProfilePic />
+            <Status text="Available" />
+          </div>
+          <div className="mt-3 flex-1">
+            <h1 className="font-bricolage text-2xl sm:text-3xl">
+              Rishabh Shukla
+            </h1>
+            <p className="text-base sm:text-lg">Software Engineer</p>
             <div className="tags flex gap-2 mt-3.5">
               <InfoTipProjects text="Github">
                 <a
@@ -35,8 +40,7 @@ export default function PortFolio() {
               <InfoTipProjects text="Twitter">
                 <a
                   target="_blank"
-                  href="https://x.com/intent/follow?screen_name=rishabhs_rizz
-"
+                  href="https://x.com/intent/follow?screen_name=rishabhs_rizz"
                   className="cursor-pointer hover:text-zinc-400 transition-colors duration-100 group"
                 >
                   <Twitter />
@@ -61,29 +65,27 @@ export default function PortFolio() {
               </InfoTipProjects>
             </div>
           </div>
-
-          <Status text="Available" />
         </div>
-        <div className="about mt-10">
-          <h1 className="text-[1.6rem] max-sm:text-2xl font-semibold tracking-tight text-start max-sm:text-center">
+        <div className="about mt-8 sm:mt-10">
+          <h1 className="text-xl sm:text-2xl md:text-[1.6rem] font-semibold tracking-tight text-start sm:text-left max-sm:text-center">
             About Me
           </h1>
-          <p className="mt-1">
+          <p className="mt-1 text-sm sm:text-base">
             Hey! I'm Rishabh Shukla, a 20-year old computer science student and
             full-stack developer who loves turning ideas into real, functional
             products.
           </p>
-          <p>
+          <p className="text-sm sm:text-base">
             I enjoy working with modern tools like Next.js, TypeScript, and
             Express, and I’m always up for learning something new. Outside of
             coding, I’m into reading books, playing cricket, swimming, and
             exploring business insights.
           </p>
-          <p>
+          <p className="text-sm sm:text-base">
             I also love contributing to open source and building things that
             make a real difference.
           </p>
-          <span className="buttons flex gap-4 mt-4">
+          <span className="buttons flex flex-col sm:flex-row gap-4 mt-4 w-full sm:w-auto">
             <a href="#contact">
               <ShinyButton text="Get in Touch" />
             </a>
@@ -96,11 +98,11 @@ export default function PortFolio() {
             </a>
           </span>
         </div>
-        <div className="support mt-10">
-          <h1 className="text-[1.6rem] max-sm:text-2xl font-semibold tracking-tight text-start max-sm:text-center">
+        <div className="support mt-8 sm:mt-10">
+          <h1 className="text-xl sm:text-2xl md:text-[1.6rem] font-semibold tracking-tight text-start sm:text-left max-sm:text-center">
             Hire Me
           </h1>
-          <p className="mt-1">
+          <p className="mt-1 text-sm sm:text-base">
             I’m currently available for internships, full-time opportunities,
             and freelance projects. If you’re looking for someone passionate,
             skilled, and ready to contribute, I’m here to help bring your ideas
@@ -111,11 +113,11 @@ export default function PortFolio() {
           </div>
         </div>
 
-        <div className="support mt-10">
-          <h1 className="text-[1.6rem] max-sm:text-2xl font-semibold tracking-tight text-start max-sm:text-center">
+        <div className="support mt-8 sm:mt-10">
+          <h1 className="text-xl sm:text-2xl md:text-[1.6rem] font-semibold tracking-tight text-start sm:text-left max-sm:text-center">
             Support Me
           </h1>
-          <p className="mt-1">
+          <p className="mt-1 text-sm sm:text-base">
             If you love what I do, whether it’s my work, the content I share, or
             anything else, please consider supporting me. Your support helps me
             continue creating, improving, and sharing my work.
@@ -127,8 +129,8 @@ export default function PortFolio() {
           </div>
         </div>
 
-        <div className="skills mt-10">
-          <h1 className="text-[1.6rem] max-sm:text-2xl font-semibold tracking-tight text-start max-sm:text-center">
+        <div className="skills mt-8 sm:mt-10">
+          <h1 className="text-xl sm:text-2xl md:text-[1.6rem] font-semibold tracking-tight text-start sm:text-left max-sm:text-center">
             Skills & Tools
           </h1>
           <div className="skills-container mt-1">
@@ -138,17 +140,17 @@ export default function PortFolio() {
           </div>
         </div>
 
-        <div className="projects mt-10">
-          <h1 className="text-[1.6rem] max-sm:text-2xl font-semibold tracking-tight text-start max-sm:text-center">
+        <div className="projects mt-8 sm:mt-10">
+          <h1 className="text-xl sm:text-2xl md:text-[1.6rem] font-semibold tracking-tight text-start sm:text-left max-sm:text-center">
             Proof of Work
           </h1>
-          <div className="project-container flex-col mt-6 ">
+          <div className="project-container flex flex-col mt-6">
             <ProjectCard />
           </div>
         </div>
 
         <Contact />
-        <div className="w-full text-sm h-18 flex justify-center items-center">
+        <div className="w-full text-xs sm:text-sm h-14 flex justify-center items-center mt-4">
           &copy; 2025 Rishabh. All Rights Reserved
         </div>
       </div>
