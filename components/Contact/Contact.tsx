@@ -24,9 +24,9 @@ export function Contact() {
       >
         <p className="font-semibold text-xl">Get in Touch</p>
         <p className="mt-2">
-          Interested in collaborating or discussing a project? I’m open to
+          Interested in collaborating or discussing a project? I&#39;m open to
           freelance work, full-time roles, and creative partnerships. Drop a
-          message—I'll get back to you soon.
+          message—I&#39;ll get back to you soon.
         </p>
         <span className="flex gap-3 mt-3">
           <a

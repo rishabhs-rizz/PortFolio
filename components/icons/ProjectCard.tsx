@@ -182,11 +182,11 @@
 
 "use client";
 
-import { div } from "framer-motion/client";
 import { useState } from "react";
-import { Github, LiveLink, Preview, ProjectGithub } from "./icons";
+import { LiveLink, Preview, ProjectGithub } from "./icons";
 import { InfoTipProjects } from "../ToolTip/ToolTip";
 import { ProjectStatusText } from "../Status/Status";
+import Image from "next/image";
 
 interface ProjectCardProps {
   title: string;
@@ -221,11 +221,18 @@ export function ProjectCard() {
             >
               {/* Image */}
               <div className="overflow-hidden rounded-lg w-full h-40 md:w-32 md:h-32 flex-shrink-0 mb-3 md:mb-0">
-                <img
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  width={128}
+                  height={128}
+                  className="w-full h-full object-cover rounded-lg hover:scale-105 transition-all duration-500 ease-in-out"
+                />
+                {/* <img
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover rounded-lg hover:scale-105 transition-all duration-500 ease-in-out"
-                />
+                /> */}
               </div>
 
               {/* Content */}

@@ -1,5 +1,3 @@
-import { span } from "framer-motion/client";
-
 export function Skills() {
   return (
     <div className="flex flex-wrap gap-2">

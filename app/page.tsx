@@ -1,6 +1,5 @@
 import { Twitter, LinkedIn, Github, Mail } from "@/components/icons/icons";
 import ShinyButton from "@/components/buttons/button";
-import { Link } from "react-scroll";
 import {
   CoffeeSupport,
   GithubSponsors,
@@ -71,7 +70,7 @@ export default function PortFolio() {
             About Me
           </h1>
           <p className="mt-1 text-sm sm:text-base">
-            Hey! I'm Rishabh Shukla, a 20-year old computer science student and
+            Hey! I am Rishabh Shukla, a 20-year old computer science student and
             full-stack developer who loves turning ideas into real, functional
             products.
           </p>
