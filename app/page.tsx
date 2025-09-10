@@ -1,4 +1,4 @@
-import { Twitter, LinkedIn, Github, Mail } from "@/components/icons/icons";
+import { Twitter, LinkedIn, Github } from "@/components/icons/icons";
 import ShinyButton from "@/components/buttons/button";
 import {
   CoffeeSupport,
@@ -19,12 +19,12 @@ export default function PortFolio() {
         <div className="prof-sec flex flex-col sm:flex-row gap-3 pb-8 border-b border-neutral-400/30">
           <div className="flex flex-row sm:flex-col items-center sm:items-start gap-3">
             <ProfilePic />
-            <Status text="Available" />
           </div>
           <div className="mt-3 flex-1">
             <h1 className="font-bricolage text-2xl sm:text-3xl">
               Rishabh Shukla
             </h1>
+
             <p className="text-base sm:text-lg">Software Engineer</p>
             <div className="tags flex gap-2 mt-3.5">
               <InfoTipProjects text="Github">
@@ -48,22 +48,15 @@ export default function PortFolio() {
               <InfoTipProjects text="LinkedIn">
                 <a
                   target="_blank"
-                  href="https://www.linkedin.com/in/rishabh-shukla-9725b123b/"
+                  href="https://www.linkedin.com/in/rishabhshukla18/"
                   className="cursor-pointer hover:text-zinc-400 transition-colors duration-100 group"
                 >
                   <LinkedIn />
                 </a>
               </InfoTipProjects>
-              <InfoTipProjects text="Mail">
-                <a
-                  target="_blank"
-                  className="cursor-pointer hover:text-zinc-400 transition-colors duration-100 group"
-                >
-                  <Mail />
-                </a>
-              </InfoTipProjects>
             </div>
           </div>
+          <Status text="Available" />
         </div>
         <div className="about mt-8 sm:mt-10">
           <h1 className="text-xl sm:text-2xl md:text-[1.6rem] font-semibold tracking-tight text-start sm:text-left max-sm:text-center">
