@@ -16,7 +16,7 @@ export default function PortFolio() {
   return (
     <div className="min-h-screen bg-black text-white flex justify-center px-2 sm:px-4">
       <div className="bg-black w-full max-w-3xl mt-6 sm:mt-10 px-2 sm:px-6 md:px-10">
-        <div className="prof-sec flex flex-col sm:flex-row gap-3 pb-8 border-b border-neutral-400/30">
+        <div className="prof-sec flex gap-3 pb-8 border-b border-neutral-400/30">
           <div className="flex flex-row sm:flex-col items-center sm:items-start gap-3">
             <ProfilePic />
           </div>
@@ -56,7 +56,9 @@ export default function PortFolio() {
               </InfoTipProjects>
             </div>
           </div>
-          <Status text="Available" />
+          <span className="hidden md:block">
+            <Status text="Available" />{" "}
+          </span>
         </div>
         <div className="about mt-8 sm:mt-10">
           <h1 className="text-xl sm:text-2xl md:text-[1.6rem] font-semibold tracking-tight text-start sm:text-left max-sm:text-center">
