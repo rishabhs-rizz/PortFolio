@@ -79,7 +79,7 @@ export default function PortFolio() {
             I also love contributing to open source and building things that
             make a real difference.
           </p>
-          <span className="buttons flex flex-col sm:flex-row gap-4 mt-4 w-full sm:w-auto">
+          <span className="buttons flex gap-4 mt-6 w-full sm:w-auto">
             <a href="#contact">
               <ShinyButton text="Get in Touch" />
             </a>
